@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="2061" systemVersion="12E55" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="TKOList" representedClassName="TKOList" syncable="YES">
+        <attribute name="index" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="milliseconds" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="options" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="timestamp" optional="YES" attributeType="Date" syncable="YES"/>
+        <relationship name="children" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="TKOList" inverseName="parent" inverseEntity="TKOList" syncable="YES"/>
+        <relationship name="listTemplate" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="TKOTemplate" inverseName="lists" inverseEntity="TKOTemplate" syncable="YES"/>
+        <relationship name="parent" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="TKOList" inverseName="children" inverseEntity="TKOList" syncable="YES"/>
+        <relationship name="passage" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="TKOPassage" inverseName="list" inverseEntity="TKOPassage" syncable="YES"/>
+        <relationship name="problems" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="TKOProblem" inverseName="lists" inverseEntity="TKOProblem" syncable="YES"/>
+        <relationship name="tags" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="TKOTag" inverseName="lists" inverseEntity="TKOTag" syncable="YES"/>
+    </entity>
+    <entity name="TKOPassage" representedClassName="TKOPassage" syncable="YES">
+        <attribute name="text" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="list" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="TKOList" inverseName="passage" inverseEntity="TKOList" syncable="YES"/>
+    </entity>
+    <entity name="TKOProblem" representedClassName="TKOProblem" syncable="YES">
+        <attribute name="answerDesc" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="attributedString" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="difficulty" optional="YES" attributeType="Integer 64" defaultValueString="0" indexed="YES" syncable="YES"/>
+        <attribute name="milliseconds" optional="YES" attributeType="Integer 64" defaultValueString="0" indexed="YES" syncable="YES"/>
+        <attribute name="multipleChoiceAnswer" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="options" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="pdf" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="possibleAnswers" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="string" optional="YES" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="timestamp" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="uuid" optional="YES" attributeType="String" indexed="YES" syncable="YES"/>
+        <relationship name="lists" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="TKOList" inverseName="problems" inverseEntity="TKOList" syncable="YES"/>
+        <relationship name="problemTemplate" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="TKOTemplate" inverseName="problems" inverseEntity="TKOTemplate" syncable="YES"/>
+        <relationship name="tags" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="TKOTag" inverseName="problems" inverseEntity="TKOTag" syncable="YES"/>
+    </entity>
+    <entity name="TKOTag" representedClassName="TKOTag" syncable="YES">
+        <attribute name="desc" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="index" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="children" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="TKOTag" inverseName="parent" inverseEntity="TKOTag" syncable="YES"/>
+        <relationship name="lists" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="TKOList" inverseName="tags" inverseEntity="TKOList" syncable="YES"/>
+        <relationship name="parent" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="TKOTag" inverseName="children" inverseEntity="TKOTag" syncable="YES"/>
+        <relationship name="problems" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="TKOProblem" inverseName="tags" inverseEntity="TKOProblem" syncable="YES"/>
+        <relationship name="templates" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="TKOTemplate" inverseName="tags" inverseEntity="TKOTemplate" syncable="YES"/>
+    </entity>
+    <entity name="TKOTemplate" representedClassName="TKOTemplate" syncable="YES">
+        <attribute name="index" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="milliseconds" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="options" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <relationship name="children" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="TKOTemplate" inverseName="parent" inverseEntity="TKOTemplate" syncable="YES"/>
+        <relationship name="lists" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="TKOList" inverseName="listTemplate" inverseEntity="TKOList" syncable="YES"/>
+        <relationship name="parent" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="TKOTemplate" inverseName="children" inverseEntity="TKOTemplate" syncable="YES"/>
+        <relationship name="problems" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="TKOProblem" inverseName="problemTemplate" inverseEntity="TKOProblem" syncable="YES"/>
+        <relationship name="tags" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="TKOTag" inverseName="templates" inverseEntity="TKOTag" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="TKOList" positionX="-45" positionY="81" width="117" height="208"/>
+        <element name="TKOPassage" positionX="-9" positionY="360" width="108" height="88"/>
+        <element name="TKOProblem" positionX="178" positionY="-90" width="137" height="253"/>
+        <element name="TKOTag" positionX="171" positionY="243" width="137" height="163"/>
+        <element name="TKOTemplate" positionX="360" positionY="59" width="126" height="178"/>
+    </elements>
+</model>

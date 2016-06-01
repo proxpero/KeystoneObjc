@@ -1,0 +1,601 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		454A24B81823E8B2009E068C /* NSSet+TKO.m in Sources */ = {isa = PBXBuildFile; fileRef = 454A24B51823E8B2009E068C /* NSSet+TKO.m */; };
+		454A24B91823E8B2009E068C /* NSString+TKO.m in Sources */ = {isa = PBXBuildFile; fileRef = 454A24B71823E8B2009E068C /* NSString+TKO.m */; };
+		5202531E176F4A62009B8BF3 /* TKOTemplateSeedData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5202531D176F4A62009B8BF3 /* TKOTemplateSeedData.plist */; };
+		52025321176FAFE1009B8BF3 /* NSManagedObject+Keystone.m in Sources */ = {isa = PBXBuildFile; fileRef = 52025320176FAFE1009B8BF3 /* NSManagedObject+Keystone.m */; settings = {COMPILER_FLAGS = ""; }; };
+		520253271770E0B0009B8BF3 /* TKOTableCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 520253261770E0B0009B8BF3 /* TKOTableCellView.m */; settings = {COMPILER_FLAGS = ""; }; };
+		5202532C1773E848009B8BF3 /* TKOTwoColumnTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5202532B1773E848009B8BF3 /* TKOTwoColumnTextView.m */; settings = {COMPILER_FLAGS = ""; }; };
+		520253621775E167009B8BF3 /* INAppStoreWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 5202535F1775E166009B8BF3 /* INAppStoreWindow.m */; settings = {COMPILER_FLAGS = ""; }; };
+		520253631775E167009B8BF3 /* INWindowButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 520253611775E167009B8BF3 /* INWindowButton.m */; settings = {COMPILER_FLAGS = ""; }; };
+		5202538717762943009B8BF3 /* TKOHeaderCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5202538617762942009B8BF3 /* TKOHeaderCellView.m */; settings = {COMPILER_FLAGS = ""; }; };
+		5202538E17776A66009B8BF3 /* TKOProblemSeedData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5202538D17776A66009B8BF3 /* TKOProblemSeedData.plist */; };
+		5202539317776BD5009B8BF3 /* NSMutableAttributedString+MathematizerKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 5202539017776BD4009B8BF3 /* NSMutableAttributedString+MathematizerKit.m */; settings = {COMPILER_FLAGS = ""; }; };
+		5202539417776BD5009B8BF3 /* TKOMathematizerKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 5202539217776BD5009B8BF3 /* TKOMathematizerKit.m */; settings = {COMPILER_FLAGS = ""; }; };
+		520253C4177B33B6009B8BF3 /* TKODefaultProblemAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = 520253C3177B33B6009B8BF3 /* TKODefaultProblemAttributes.m */; settings = {COMPILER_FLAGS = ""; }; };
+		520253CC177B4883009B8BF3 /* TKOTextStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 520253CB177B4882009B8BF3 /* TKOTextStorage.m */; settings = {COMPILER_FLAGS = ""; }; };
+		520253D0177B8DDD009B8BF3 /* TKOProblemWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 520253CE177B8DD6009B8BF3 /* TKOProblemWindowController.m */; settings = {COMPILER_FLAGS = ""; }; };
+		520253D1177B8DDD009B8BF3 /* TKOProblemWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 520253CF177B8DD9009B8BF3 /* TKOProblemWindowController.xib */; };
+		52166C2A177D235000C5BF69 /* TKOProblemAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 52166C29177D235000C5BF69 /* TKOProblemAttribute.m */; settings = {COMPILER_FLAGS = ""; }; };
+		52166C8E177F7D6A00C5BF69 /* TKOConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 52166C8D177F7D6A00C5BF69 /* TKOConstants.m */; settings = {COMPILER_FLAGS = ""; }; };
+		52B65E3B176902FB003F8F8D /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52B65E3A176902FB003F8F8D /* Cocoa.framework */; };
+		52B65E45176902FB003F8F8D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 52B65E43176902FB003F8F8D /* InfoPlist.strings */; };
+		52B65E47176902FB003F8F8D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 52B65E46176902FB003F8F8D /* main.m */; settings = {COMPILER_FLAGS = ""; }; };
+		52B65E4B176902FB003F8F8D /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 52B65E49176902FB003F8F8D /* Credits.rtf */; };
+		52B65E4E176902FB003F8F8D /* TKOAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 52B65E4D176902FB003F8F8D /* TKOAppDelegate.m */; settings = {COMPILER_FLAGS = ""; }; };
+		52B65E51176902FB003F8F8D /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52B65E4F176902FB003F8F8D /* MainMenu.xib */; };
+		52B65E54176902FB003F8F8D /* Keystone.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 52B65E52176902FB003F8F8D /* Keystone.xcdatamodeld */; };
+		52B65E6C17693D4C003F8F8D /* TKOSidebarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52B65E6B17693D4C003F8F8D /* TKOSidebarController.m */; settings = {COMPILER_FLAGS = ""; }; };
+		52B65E6E1769D998003F8F8D /* TKOSeedData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 52B65E6D1769D998003F8F8D /* TKOSeedData.plist */; };
+		52B65E77176A3413003F8F8D /* TKOList.m in Sources */ = {isa = PBXBuildFile; fileRef = 52B65E76176A3413003F8F8D /* TKOList.m */; settings = {COMPILER_FLAGS = ""; }; };
+		52B65E7A176A3413003F8F8D /* TKOTemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = 52B65E79176A3413003F8F8D /* TKOTemplate.m */; settings = {COMPILER_FLAGS = ""; }; };
+		52B65E7D176A3414003F8F8D /* TKOTag.m in Sources */ = {isa = PBXBuildFile; fileRef = 52B65E7C176A3414003F8F8D /* TKOTag.m */; settings = {COMPILER_FLAGS = ""; }; };
+		52B65E80176A3414003F8F8D /* TKOPassage.m in Sources */ = {isa = PBXBuildFile; fileRef = 52B65E7F176A3414003F8F8D /* TKOPassage.m */; settings = {COMPILER_FLAGS = ""; }; };
+		52B65E83176A3414003F8F8D /* TKOProblem.m in Sources */ = {isa = PBXBuildFile; fileRef = 52B65E82176A3414003F8F8D /* TKOProblem.m */; settings = {COMPILER_FLAGS = ""; }; };
+		52B65E86176A4014003F8F8D /* NSManagedObject+TKO.m in Sources */ = {isa = PBXBuildFile; fileRef = 52B65E85176A4014003F8F8D /* NSManagedObject+TKO.m */; settings = {COMPILER_FLAGS = ""; }; };
+		52B65E8A176A404B003F8F8D /* NSSet+TKO.m in Sources */ = {isa = PBXBuildFile; fileRef = 52B65E89176A404B003F8F8D /* NSSet+TKO.m */; settings = {COMPILER_FLAGS = ""; }; };
+		52B65E90176A7042003F8F8D /* TKOOutlineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52B65E8F176A7042003F8F8D /* TKOOutlineViewController.m */; settings = {COMPILER_FLAGS = ""; }; };
+		52B963C5176DBE3000C413D3 /* TKOSentenceCompletionSeedData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 52B963C4176DBE3000C413D3 /* TKOSentenceCompletionSeedData.plist */; };
+		52B963CE176DC75C00C413D3 /* NSString+TKO.m in Sources */ = {isa = PBXBuildFile; fileRef = 52B963C7176DC75B00C413D3 /* NSString+TKO.m */; settings = {COMPILER_FLAGS = ""; }; };
+		52B963CF176DC75C00C413D3 /* NSMutableString+TKO.m in Sources */ = {isa = PBXBuildFile; fileRef = 52B963C9176DC75C00C413D3 /* NSMutableString+TKO.m */; settings = {COMPILER_FLAGS = ""; }; };
+		52B963D1176DC75C00C413D3 /* NSMutableAttributedString+TKO.m in Sources */ = {isa = PBXBuildFile; fileRef = 52B963CC176DC75C00C413D3 /* NSMutableAttributedString+TKO.m */; settings = {COMPILER_FLAGS = ""; }; };
+		52B963D4176DF2FB00C413D3 /* TKOTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52B963D3176DF2FB00C413D3 /* TKOTableViewController.m */; settings = {COMPILER_FLAGS = ""; }; };
+		52E5E9B11780617600234787 /* DropDownButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 52E5E9B01780617600234787 /* DropDownButton.m */; };
+		52E97C2E176B45C70067DE0F /* DownArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 52E97C2C176B45C70067DE0F /* DownArrow.png */; };
+		52E97C2F176B45C70067DE0F /* DownArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 52E97C2D176B45C70067DE0F /* DownArrow@2x.png */; };
+		52E97C33176B46BB0067DE0F /* WhiteDownArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 52E97C31176B46BB0067DE0F /* WhiteDownArrow.png */; };
+		52E97C34176B46BB0067DE0F /* WhiteDownArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 52E97C32176B46BB0067DE0F /* WhiteDownArrow@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		454A24B41823E8B2009E068C /* NSSet+TKO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSSet+TKO.h"; sourceTree = "<group>"; };
+		454A24B51823E8B2009E068C /* NSSet+TKO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSSet+TKO.m"; sourceTree = "<group>"; };
+		454A24B61823E8B2009E068C /* NSString+TKO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+TKO.h"; sourceTree = "<group>"; };
+		454A24B71823E8B2009E068C /* NSString+TKO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+TKO.m"; sourceTree = "<group>"; };
+		5202531D176F4A62009B8BF3 /* TKOTemplateSeedData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TKOTemplateSeedData.plist; sourceTree = "<group>"; };
+		5202531F176FAFE1009B8BF3 /* NSManagedObject+Keystone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObject+Keystone.h"; sourceTree = "<group>"; };
+		52025320176FAFE1009B8BF3 /* NSManagedObject+Keystone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObject+Keystone.m"; sourceTree = "<group>"; };
+		520253251770E0B0009B8BF3 /* TKOTableCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKOTableCellView.h; sourceTree = "<group>"; };
+		520253261770E0B0009B8BF3 /* TKOTableCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKOTableCellView.m; sourceTree = "<group>"; };
+		5202532A1773E848009B8BF3 /* TKOTwoColumnTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKOTwoColumnTextView.h; sourceTree = "<group>"; };
+		5202532B1773E848009B8BF3 /* TKOTwoColumnTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKOTwoColumnTextView.m; sourceTree = "<group>"; };
+		5202535E1775E166009B8BF3 /* INAppStoreWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INAppStoreWindow.h; sourceTree = "<group>"; };
+		5202535F1775E166009B8BF3 /* INAppStoreWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = INAppStoreWindow.m; sourceTree = "<group>"; };
+		520253601775E166009B8BF3 /* INWindowButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INWindowButton.h; sourceTree = "<group>"; };
+		520253611775E167009B8BF3 /* INWindowButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = INWindowButton.m; sourceTree = "<group>"; };
+		5202538517762942009B8BF3 /* TKOHeaderCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKOHeaderCellView.h; sourceTree = "<group>"; };
+		5202538617762942009B8BF3 /* TKOHeaderCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKOHeaderCellView.m; sourceTree = "<group>"; };
+		5202538D17776A66009B8BF3 /* TKOProblemSeedData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TKOProblemSeedData.plist; sourceTree = "<group>"; };
+		5202538F17776BD3009B8BF3 /* NSMutableAttributedString+MathematizerKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableAttributedString+MathematizerKit.h"; sourceTree = "<group>"; };
+		5202539017776BD4009B8BF3 /* NSMutableAttributedString+MathematizerKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableAttributedString+MathematizerKit.m"; sourceTree = "<group>"; };
+		5202539117776BD4009B8BF3 /* TKOMathematizerKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKOMathematizerKit.h; sourceTree = "<group>"; };
+		5202539217776BD5009B8BF3 /* TKOMathematizerKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKOMathematizerKit.m; sourceTree = "<group>"; };
+		520253C2177B33B5009B8BF3 /* TKODefaultProblemAttributes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKODefaultProblemAttributes.h; sourceTree = "<group>"; };
+		520253C3177B33B6009B8BF3 /* TKODefaultProblemAttributes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKODefaultProblemAttributes.m; sourceTree = "<group>"; };
+		520253CA177B4881009B8BF3 /* TKOTextStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKOTextStorage.h; sourceTree = "<group>"; };
+		520253CB177B4882009B8BF3 /* TKOTextStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKOTextStorage.m; sourceTree = "<group>"; };
+		520253CD177B8DD3009B8BF3 /* TKOProblemWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKOProblemWindowController.h; sourceTree = "<group>"; };
+		520253CE177B8DD6009B8BF3 /* TKOProblemWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKOProblemWindowController.m; sourceTree = "<group>"; };
+		520253CF177B8DD9009B8BF3 /* TKOProblemWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TKOProblemWindowController.xib; sourceTree = "<group>"; };
+		52166C28177D235000C5BF69 /* TKOProblemAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKOProblemAttribute.h; sourceTree = "<group>"; };
+		52166C29177D235000C5BF69 /* TKOProblemAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKOProblemAttribute.m; sourceTree = "<group>"; };
+		52166C8C177F7D6A00C5BF69 /* TKOConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKOConstants.h; sourceTree = "<group>"; };
+		52166C8D177F7D6A00C5BF69 /* TKOConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKOConstants.m; sourceTree = "<group>"; };
+		52B65E37176902FB003F8F8D /* Keystone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Keystone.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		52B65E3A176902FB003F8F8D /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		52B65E3D176902FB003F8F8D /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		52B65E3E176902FB003F8F8D /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		52B65E3F176902FB003F8F8D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		52B65E42176902FB003F8F8D /* Keystone-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Keystone-Info.plist"; sourceTree = "<group>"; };
+		52B65E44176902FB003F8F8D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		52B65E46176902FB003F8F8D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		52B65E48176902FB003F8F8D /* Keystone-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Keystone-Prefix.pch"; sourceTree = "<group>"; };
+		52B65E4A176902FB003F8F8D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		52B65E4C176902FB003F8F8D /* TKOAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TKOAppDelegate.h; sourceTree = "<group>"; };
+		52B65E4D176902FB003F8F8D /* TKOAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TKOAppDelegate.m; sourceTree = "<group>"; };
+		52B65E50176902FB003F8F8D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		52B65E53176902FB003F8F8D /* Keystone.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Keystone.xcdatamodel; sourceTree = "<group>"; };
+		52B65E6A17693D4C003F8F8D /* TKOSidebarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKOSidebarController.h; sourceTree = "<group>"; };
+		52B65E6B17693D4C003F8F8D /* TKOSidebarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKOSidebarController.m; sourceTree = "<group>"; };
+		52B65E6D1769D998003F8F8D /* TKOSeedData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TKOSeedData.plist; sourceTree = "<group>"; };
+		52B65E6F1769F893003F8F8D /* TKOSourceListItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TKOSourceListItem.h; sourceTree = "<group>"; };
+		52B65E75176A3413003F8F8D /* TKOList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKOList.h; sourceTree = "<group>"; };
+		52B65E76176A3413003F8F8D /* TKOList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKOList.m; sourceTree = "<group>"; };
+		52B65E78176A3413003F8F8D /* TKOTemplate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKOTemplate.h; sourceTree = "<group>"; };
+		52B65E79176A3413003F8F8D /* TKOTemplate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKOTemplate.m; sourceTree = "<group>"; };
+		52B65E7B176A3414003F8F8D /* TKOTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKOTag.h; sourceTree = "<group>"; };
+		52B65E7C176A3414003F8F8D /* TKOTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKOTag.m; sourceTree = "<group>"; };
+		52B65E7E176A3414003F8F8D /* TKOPassage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKOPassage.h; sourceTree = "<group>"; };
+		52B65E7F176A3414003F8F8D /* TKOPassage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKOPassage.m; sourceTree = "<group>"; };
+		52B65E81176A3414003F8F8D /* TKOProblem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKOProblem.h; sourceTree = "<group>"; };
+		52B65E82176A3414003F8F8D /* TKOProblem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKOProblem.m; sourceTree = "<group>"; };
+		52B65E84176A4014003F8F8D /* NSManagedObject+TKO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObject+TKO.h"; sourceTree = "<group>"; };
+		52B65E85176A4014003F8F8D /* NSManagedObject+TKO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObject+TKO.m"; sourceTree = "<group>"; };
+		52B65E88176A404B003F8F8D /* NSSet+TKO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSSet+TKO.h"; sourceTree = "<group>"; };
+		52B65E89176A404B003F8F8D /* NSSet+TKO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSSet+TKO.m"; sourceTree = "<group>"; };
+		52B65E8E176A7042003F8F8D /* TKOOutlineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKOOutlineViewController.h; sourceTree = "<group>"; };
+		52B65E8F176A7042003F8F8D /* TKOOutlineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKOOutlineViewController.m; sourceTree = "<group>"; };
+		52B85A6F178B48290059B028 /* TKOKeystoneDefaultsKeys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKOKeystoneDefaultsKeys.h; sourceTree = "<group>"; };
+		52B963C4176DBE3000C413D3 /* TKOSentenceCompletionSeedData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TKOSentenceCompletionSeedData.plist; sourceTree = "<group>"; };
+		52B963C6176DC75B00C413D3 /* NSString+TKO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+TKO.h"; sourceTree = "<group>"; };
+		52B963C7176DC75B00C413D3 /* NSString+TKO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+TKO.m"; sourceTree = "<group>"; };
+		52B963C8176DC75B00C413D3 /* NSMutableString+TKO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableString+TKO.h"; sourceTree = "<group>"; };
+		52B963C9176DC75C00C413D3 /* NSMutableString+TKO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableString+TKO.m"; sourceTree = "<group>"; };
+		52B963CC176DC75C00C413D3 /* NSMutableAttributedString+TKO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableAttributedString+TKO.m"; sourceTree = "<group>"; };
+		52B963CD176DC75C00C413D3 /* NSMutableAttributedString+TKO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableAttributedString+TKO.h"; sourceTree = "<group>"; };
+		52B963D2176DF2FA00C413D3 /* TKOTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKOTableViewController.h; sourceTree = "<group>"; };
+		52B963D3176DF2FB00C413D3 /* TKOTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKOTableViewController.m; sourceTree = "<group>"; };
+		52E5E9AF1780617600234787 /* DropDownButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DropDownButton.h; sourceTree = "<group>"; };
+		52E5E9B01780617600234787 /* DropDownButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DropDownButton.m; sourceTree = "<group>"; };
+		52E97C2C176B45C70067DE0F /* DownArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DownArrow.png; sourceTree = "<group>"; };
+		52E97C2D176B45C70067DE0F /* DownArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DownArrow@2x.png"; sourceTree = "<group>"; };
+		52E97C31176B46BB0067DE0F /* WhiteDownArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WhiteDownArrow.png; sourceTree = "<group>"; };
+		52E97C32176B46BB0067DE0F /* WhiteDownArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "WhiteDownArrow@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		52B65E34176902FB003F8F8D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52B65E3B176902FB003F8F8D /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5202539517776BE4009B8BF3 /* Custom Kits */ = {
+			isa = PBXGroup;
+			children = (
+				5202539117776BD4009B8BF3 /* TKOMathematizerKit.h */,
+				5202539217776BD5009B8BF3 /* TKOMathematizerKit.m */,
+				520253C2177B33B5009B8BF3 /* TKODefaultProblemAttributes.h */,
+				520253C3177B33B6009B8BF3 /* TKODefaultProblemAttributes.m */,
+			);
+			name = "Custom Kits";
+			sourceTree = "<group>";
+		};
+		52B65E2E176902FB003F8F8D = {
+			isa = PBXGroup;
+			children = (
+				52B65E40176902FB003F8F8D /* Keystone */,
+				52B65E39176902FB003F8F8D /* Frameworks */,
+				52B65E38176902FB003F8F8D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		52B65E38176902FB003F8F8D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				52B65E37176902FB003F8F8D /* Keystone.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		52B65E39176902FB003F8F8D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				52B65E3A176902FB003F8F8D /* Cocoa.framework */,
+				52B65E3C176902FB003F8F8D /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		52B65E3C176902FB003F8F8D /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				52B65E3D176902FB003F8F8D /* AppKit.framework */,
+				52B65E3E176902FB003F8F8D /* CoreData.framework */,
+				52B65E3F176902FB003F8F8D /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		52B65E40176902FB003F8F8D /* Keystone */ = {
+			isa = PBXGroup;
+			children = (
+				52B65E4C176902FB003F8F8D /* TKOAppDelegate.h */,
+				52B65E4D176902FB003F8F8D /* TKOAppDelegate.m */,
+				52B65E4F176902FB003F8F8D /* MainMenu.xib */,
+				52B65E6A17693D4C003F8F8D /* TKOSidebarController.h */,
+				52B65E6B17693D4C003F8F8D /* TKOSidebarController.m */,
+				52B963D2176DF2FA00C413D3 /* TKOTableViewController.h */,
+				52B963D3176DF2FB00C413D3 /* TKOTableViewController.m */,
+				520253CD177B8DD3009B8BF3 /* TKOProblemWindowController.h */,
+				520253CE177B8DD6009B8BF3 /* TKOProblemWindowController.m */,
+				520253CF177B8DD9009B8BF3 /* TKOProblemWindowController.xib */,
+				52B65E5A17690E16003F8F8D /* Model */,
+				52B963C1176D098500C413D3 /* Seed Data */,
+				52B65E74176A3336003F8F8D /* Protocols */,
+				5202539517776BE4009B8BF3 /* Custom Kits */,
+				52B65E87176A401B003F8F8D /* Categories */,
+				52B65E73176A022E003F8F8D /* Subclasses */,
+				52E97C30176B45CE0067DE0F /* Assets */,
+				52B65E41176902FB003F8F8D /* Supporting Files */,
+			);
+			path = Keystone;
+			sourceTree = "<group>";
+		};
+		52B65E41176902FB003F8F8D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				52B65E42176902FB003F8F8D /* Keystone-Info.plist */,
+				52B65E43176902FB003F8F8D /* InfoPlist.strings */,
+				52B65E46176902FB003F8F8D /* main.m */,
+				52B65E48176902FB003F8F8D /* Keystone-Prefix.pch */,
+				52B65E49176902FB003F8F8D /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		52B65E5A17690E16003F8F8D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				52B65E52176902FB003F8F8D /* Keystone.xcdatamodeld */,
+				52B65E75176A3413003F8F8D /* TKOList.h */,
+				52B65E76176A3413003F8F8D /* TKOList.m */,
+				52B65E78176A3413003F8F8D /* TKOTemplate.h */,
+				52B65E79176A3413003F8F8D /* TKOTemplate.m */,
+				52B65E7B176A3414003F8F8D /* TKOTag.h */,
+				52B65E7C176A3414003F8F8D /* TKOTag.m */,
+				52B65E7E176A3414003F8F8D /* TKOPassage.h */,
+				52B65E7F176A3414003F8F8D /* TKOPassage.m */,
+				52B65E81176A3414003F8F8D /* TKOProblem.h */,
+				52B65E82176A3414003F8F8D /* TKOProblem.m */,
+				52166C28177D235000C5BF69 /* TKOProblemAttribute.h */,
+				52166C29177D235000C5BF69 /* TKOProblemAttribute.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		52B65E73176A022E003F8F8D /* Subclasses */ = {
+			isa = PBXGroup;
+			children = (
+				52E5E9AF1780617600234787 /* DropDownButton.h */,
+				52E5E9B01780617600234787 /* DropDownButton.m */,
+				520253CA177B4881009B8BF3 /* TKOTextStorage.h */,
+				520253CB177B4882009B8BF3 /* TKOTextStorage.m */,
+				5202535E1775E166009B8BF3 /* INAppStoreWindow.h */,
+				5202535F1775E166009B8BF3 /* INAppStoreWindow.m */,
+				520253601775E166009B8BF3 /* INWindowButton.h */,
+				520253611775E167009B8BF3 /* INWindowButton.m */,
+				52B65E8E176A7042003F8F8D /* TKOOutlineViewController.h */,
+				52B65E8F176A7042003F8F8D /* TKOOutlineViewController.m */,
+				520253251770E0B0009B8BF3 /* TKOTableCellView.h */,
+				520253261770E0B0009B8BF3 /* TKOTableCellView.m */,
+				5202538517762942009B8BF3 /* TKOHeaderCellView.h */,
+				5202538617762942009B8BF3 /* TKOHeaderCellView.m */,
+				5202532A1773E848009B8BF3 /* TKOTwoColumnTextView.h */,
+				5202532B1773E848009B8BF3 /* TKOTwoColumnTextView.m */,
+			);
+			name = Subclasses;
+			sourceTree = "<group>";
+		};
+		52B65E74176A3336003F8F8D /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				52B65E6F1769F893003F8F8D /* TKOSourceListItem.h */,
+				52166C8C177F7D6A00C5BF69 /* TKOConstants.h */,
+				52166C8D177F7D6A00C5BF69 /* TKOConstants.m */,
+				52B85A6F178B48290059B028 /* TKOKeystoneDefaultsKeys.h */,
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
+		52B65E87176A401B003F8F8D /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				454A24B41823E8B2009E068C /* NSSet+TKO.h */,
+				454A24B51823E8B2009E068C /* NSSet+TKO.m */,
+				454A24B61823E8B2009E068C /* NSString+TKO.h */,
+				454A24B71823E8B2009E068C /* NSString+TKO.m */,
+				5202531F176FAFE1009B8BF3 /* NSManagedObject+Keystone.h */,
+				52025320176FAFE1009B8BF3 /* NSManagedObject+Keystone.m */,
+				52B963C6176DC75B00C413D3 /* NSString+TKO.h */,
+				52B963C7176DC75B00C413D3 /* NSString+TKO.m */,
+				52B963C8176DC75B00C413D3 /* NSMutableString+TKO.h */,
+				52B963C9176DC75C00C413D3 /* NSMutableString+TKO.m */,
+				52B963CD176DC75C00C413D3 /* NSMutableAttributedString+TKO.h */,
+				52B963CC176DC75C00C413D3 /* NSMutableAttributedString+TKO.m */,
+				5202538F17776BD3009B8BF3 /* NSMutableAttributedString+MathematizerKit.h */,
+				5202539017776BD4009B8BF3 /* NSMutableAttributedString+MathematizerKit.m */,
+				52B65E88176A404B003F8F8D /* NSSet+TKO.h */,
+				52B65E89176A404B003F8F8D /* NSSet+TKO.m */,
+				52B65E84176A4014003F8F8D /* NSManagedObject+TKO.h */,
+				52B65E85176A4014003F8F8D /* NSManagedObject+TKO.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		52B963C1176D098500C413D3 /* Seed Data */ = {
+			isa = PBXGroup;
+			children = (
+				5202538D17776A66009B8BF3 /* TKOProblemSeedData.plist */,
+				5202531D176F4A62009B8BF3 /* TKOTemplateSeedData.plist */,
+				52B963C4176DBE3000C413D3 /* TKOSentenceCompletionSeedData.plist */,
+				52B65E6D1769D998003F8F8D /* TKOSeedData.plist */,
+			);
+			name = "Seed Data";
+			sourceTree = "<group>";
+		};
+		52E97C30176B45CE0067DE0F /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				52E97C31176B46BB0067DE0F /* WhiteDownArrow.png */,
+				52E97C32176B46BB0067DE0F /* WhiteDownArrow@2x.png */,
+				52E97C2C176B45C70067DE0F /* DownArrow.png */,
+				52E97C2D176B45C70067DE0F /* DownArrow@2x.png */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		52B65E36176902FB003F8F8D /* Keystone */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52B65E57176902FB003F8F8D /* Build configuration list for PBXNativeTarget "Keystone" */;
+			buildPhases = (
+				52B65E33176902FB003F8F8D /* Sources */,
+				52B65E34176902FB003F8F8D /* Frameworks */,
+				52B65E35176902FB003F8F8D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Keystone;
+			productName = Keystone;
+			productReference = 52B65E37176902FB003F8F8D /* Keystone.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		52B65E2F176902FB003F8F8D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = TKO;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Todd Olsen";
+			};
+			buildConfigurationList = 52B65E32176902FB003F8F8D /* Build configuration list for PBXProject "Keystone" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 52B65E2E176902FB003F8F8D;
+			productRefGroup = 52B65E38176902FB003F8F8D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				52B65E36176902FB003F8F8D /* Keystone */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		52B65E35176902FB003F8F8D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52B65E45176902FB003F8F8D /* InfoPlist.strings in Resources */,
+				52B65E4B176902FB003F8F8D /* Credits.rtf in Resources */,
+				52B65E51176902FB003F8F8D /* MainMenu.xib in Resources */,
+				52B65E6E1769D998003F8F8D /* TKOSeedData.plist in Resources */,
+				52E97C2E176B45C70067DE0F /* DownArrow.png in Resources */,
+				52E97C2F176B45C70067DE0F /* DownArrow@2x.png in Resources */,
+				52E97C33176B46BB0067DE0F /* WhiteDownArrow.png in Resources */,
+				52E97C34176B46BB0067DE0F /* WhiteDownArrow@2x.png in Resources */,
+				52B963C5176DBE3000C413D3 /* TKOSentenceCompletionSeedData.plist in Resources */,
+				5202531E176F4A62009B8BF3 /* TKOTemplateSeedData.plist in Resources */,
+				5202538E17776A66009B8BF3 /* TKOProblemSeedData.plist in Resources */,
+				520253D1177B8DDD009B8BF3 /* TKOProblemWindowController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		52B65E33176902FB003F8F8D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52B65E47176902FB003F8F8D /* main.m in Sources */,
+				52B65E4E176902FB003F8F8D /* TKOAppDelegate.m in Sources */,
+				52B65E54176902FB003F8F8D /* Keystone.xcdatamodeld in Sources */,
+				52B65E6C17693D4C003F8F8D /* TKOSidebarController.m in Sources */,
+				52B65E77176A3413003F8F8D /* TKOList.m in Sources */,
+				52B65E7A176A3413003F8F8D /* TKOTemplate.m in Sources */,
+				52B65E7D176A3414003F8F8D /* TKOTag.m in Sources */,
+				52B65E80176A3414003F8F8D /* TKOPassage.m in Sources */,
+				52B65E83176A3414003F8F8D /* TKOProblem.m in Sources */,
+				52B65E86176A4014003F8F8D /* NSManagedObject+TKO.m in Sources */,
+				52B65E8A176A404B003F8F8D /* NSSet+TKO.m in Sources */,
+				52B65E90176A7042003F8F8D /* TKOOutlineViewController.m in Sources */,
+				52B963CE176DC75C00C413D3 /* NSString+TKO.m in Sources */,
+				52B963CF176DC75C00C413D3 /* NSMutableString+TKO.m in Sources */,
+				52B963D1176DC75C00C413D3 /* NSMutableAttributedString+TKO.m in Sources */,
+				52B963D4176DF2FB00C413D3 /* TKOTableViewController.m in Sources */,
+				52025321176FAFE1009B8BF3 /* NSManagedObject+Keystone.m in Sources */,
+				454A24B81823E8B2009E068C /* NSSet+TKO.m in Sources */,
+				520253271770E0B0009B8BF3 /* TKOTableCellView.m in Sources */,
+				5202532C1773E848009B8BF3 /* TKOTwoColumnTextView.m in Sources */,
+				520253621775E167009B8BF3 /* INAppStoreWindow.m in Sources */,
+				520253631775E167009B8BF3 /* INWindowButton.m in Sources */,
+				5202538717762943009B8BF3 /* TKOHeaderCellView.m in Sources */,
+				5202539317776BD5009B8BF3 /* NSMutableAttributedString+MathematizerKit.m in Sources */,
+				5202539417776BD5009B8BF3 /* TKOMathematizerKit.m in Sources */,
+				520253C4177B33B6009B8BF3 /* TKODefaultProblemAttributes.m in Sources */,
+				454A24B91823E8B2009E068C /* NSString+TKO.m in Sources */,
+				520253CC177B4883009B8BF3 /* TKOTextStorage.m in Sources */,
+				520253D0177B8DDD009B8BF3 /* TKOProblemWindowController.m in Sources */,
+				52166C2A177D235000C5BF69 /* TKOProblemAttribute.m in Sources */,
+				52166C8E177F7D6A00C5BF69 /* TKOConstants.m in Sources */,
+				52E5E9B11780617600234787 /* DropDownButton.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		52B65E43176902FB003F8F8D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				52B65E44176902FB003F8F8D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		52B65E49176902FB003F8F8D /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				52B65E4A176902FB003F8F8D /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		52B65E4F176902FB003F8F8D /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				52B65E50176902FB003F8F8D /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		52B65E55176902FB003F8F8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		52B65E56176902FB003F8F8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		52B65E58176902FB003F8F8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Keystone/Keystone-Prefix.pch";
+				INFOPLIST_FILE = "Keystone/Keystone-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		52B65E59176902FB003F8F8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Keystone/Keystone-Prefix.pch";
+				INFOPLIST_FILE = "Keystone/Keystone-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		52B65E32176902FB003F8F8D /* Build configuration list for PBXProject "Keystone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52B65E55176902FB003F8F8D /* Debug */,
+				52B65E56176902FB003F8F8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52B65E57176902FB003F8F8D /* Build configuration list for PBXNativeTarget "Keystone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52B65E58176902FB003F8F8D /* Debug */,
+				52B65E59176902FB003F8F8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		52B65E52176902FB003F8F8D /* Keystone.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				52B65E53176902FB003F8F8D /* Keystone.xcdatamodel */,
+			);
+			currentVersion = 52B65E53176902FB003F8F8D /* Keystone.xcdatamodel */;
+			path = Keystone.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 52B65E2F176902FB003F8F8D /* Project object */;
+}
